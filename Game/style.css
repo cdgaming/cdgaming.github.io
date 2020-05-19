@@ -1,8 +1,0 @@
-.overflow-div {
-  width: 450px;
-  height: 170px;
-  position: relative; left: 100px;
-  border: solid 1px;
-  overflow: scroll;
-  white-space: nowrap;
-}
