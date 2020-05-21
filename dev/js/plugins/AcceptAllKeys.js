@@ -1,7 +1,7 @@
 
 
 /*:
- * @plugindesc 使えるキーを拡張します
+ * @plugindesc 使えるキーを拡張します 重要
  * @author dummy
  *
  * @param key_a
@@ -145,7 +145,7 @@
  * @default up
  * @param F9
  * @desc キー入力の内部割り当てを定義します。
- * @default debug
+ * @default 
 
 
  * @help
