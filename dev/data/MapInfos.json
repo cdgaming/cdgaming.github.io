@@ -2,7 +2,7 @@
 null,
 {"id":1,"expanded":false,"name":"正規ロビーB","order":52,"parentId":220,"scrollX":832,"scrollY":640},
 {"id":2,"expanded":false,"name":"ロビー体験版A","order":27,"parentId":198,"scrollX":679,"scrollY":842},
-{"id":3,"expanded":true,"name":"オンライン部屋","order":160,"parentId":0,"scrollX":821,"scrollY":742},
+{"id":3,"expanded":true,"name":"オンライン部屋","order":160,"parentId":0,"scrollX":962,"scrollY":615},
 {"id":4,"expanded":false,"name":"template","order":159,"parentId":0,"scrollX":821,"scrollY":742},
 null,
 null,

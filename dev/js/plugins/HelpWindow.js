@@ -14,7 +14,7 @@
 (function() {
 	'use strict';
 	var visible = true;
-	var text = '\\}\\c[2][Z/Ent]:Action　[X]:Cancel [H]:Help [L]:Log　[Space]:Chat　[O]:Option';
+	var text = '\\}\\c[2][Z/Ent]:Action [X]:Cancel [H]:Help [L]:Log [Space]:Chat [O]:Option';
 	hook(Scene_Map, 'createAllWindows', function() {
 		var origin = arguments[arguments.length - 1];
 		origin.apply(this, arguments);
