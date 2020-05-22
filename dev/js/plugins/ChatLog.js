@@ -1,1 +1,68 @@
-var _0x2828=['join','pluginCommand','[チャットログ]\x0a','showPicture','push','pushLog','pictureId','_prevChat','randomInt','_scene','prototype','_chatLogWindow','_pictureId','_log','length','value','easing'];(function(_0x19e0b7,_0x2828b4){var _0x38a08c=function(_0x4e899a){while(--_0x4e899a){_0x19e0b7['push'](_0x19e0b7['shift']());}};_0x38a08c(++_0x2828b4);}(_0x2828,0xd0));var _0x38a0=function(_0x19e0b7,_0x2828b4){_0x19e0b7=_0x19e0b7-0x0;var _0x38a08c=_0x2828[_0x19e0b7];return _0x38a08c;};var ChatLogManager={'_pictureId':0x50,'_log':[],'pictureId':function(){return this['_pictureId']===0x64?this[_0x38a0('0x8')]=0x51:++this['_pictureId'];},'push':function(_0xb2a58){this[_0x38a0('0x9')][_0x38a0('0x0')](_0xb2a58);if(this[_0x38a0('0x9')][_0x38a0('0xa')]>0x10)this[_0x38a0('0x9')]['shift']();},'log':function(){return _0x38a0('0xf')+this[_0x38a0('0x9')][_0x38a0('0xd')]('\x0a');},'chat':function(_0x133ccf,_0x122c83){var _0x159be6=$gameVariables[_0x38a0('0xb')](_0x133ccf);if(_0x159be6&&(_0x159be6!==_0x122c83[_0x38a0('0x3')]||!_0x122c83[_0x38a0('0x3')])){var _0x342377=Math[_0x38a0('0x4')](0x226);var _0x5da0d9=this[_0x38a0('0x2')]();Game_Interpreter[_0x38a0('0x6')][_0x38a0('0xe')]('D_Text',[_0x159be6]);Game_Interpreter[_0x38a0('0x6')][_0x38a0('0xe')](_0x38a0('0xc'),['linear']);$gameScreen[_0x38a0('0x10')](_0x5da0d9,'',0x0,0x320,_0x342377,0x64,0x64,0xff,0x0);$gameScreen['movePicture'](_0x5da0d9,0x0,-0x578,_0x342377,0x64,0x64,0xff,0x0,0x258);SceneManager[_0x38a0('0x5')][_0x38a0('0x7')][_0x38a0('0x1')](_0x159be6);}_0x122c83[_0x38a0('0x3')]=_0x159be6;}};
+//=============================================================================
+// ChatLog.js
+// PUBLIC DOMAIN
+//=============================================================================
+
+/*:
+ * @plugindesc チャットログを保持し、発言を動画風に流します。
+ * @author くらむぼん
+ *
+ * @help
+ * 自分用のプラグインのため特に解説や宣伝はしませんが、
+ * あなたの作品で利用して頂く分には一向に構いません。
+ * ご自由にお使いください。
+ */
+
+var ChatLogManager = {
+	_pictureId: 80,
+	_log: [],
+	pictureId: function() {
+		return this._pictureId === 100 ? this._pictureId = 81 : ++this._pictureId;
+	},
+	push: function(message) {
+		this._log.push(message);
+		if (this._log.length > 16) this._log.shift();
+	},
+	log: function() {
+		return '[チャットログ]\n' + this._log.join('\n');
+	},
+	chat: function(chatId, event) {
+		var chat = $gameVariables.value(chatId);
+		if (chat && (chat !== event._prevChat || !event._prevChat)) {
+			var y = Math.randomInt(550);
+			var pictureId = this.pictureId();
+			Game_Interpreter.prototype.pluginCommand('D_Text', [chat]);
+			Game_Interpreter.prototype.pluginCommand('easing', ['linear']);
+			$gameScreen.showPicture(pictureId, '', 0, 800, y, 100, 100, 255, 0);
+			$gameScreen.movePicture(pictureId, 0, -1400, y, 100, 100, 255, 0, 600);
+			SceneManager._scene._chatLogWindow.pushLog(chat);
+		}
+		event._prevChat = chat;
+	},
+};
+/*
+hook(SceneManager, 'initialize', function() {
+	var origin = arguments[arguments.length - 1];
+	origin.apply(this, arguments);
+	hook(OnlineManager, 'start', function(user) {
+		OnlineManager.version = 3;
+		var origin = arguments[arguments.length - 1];
+		origin.apply(this, arguments);
+		var versionRef = firebase.database().ref('version');
+		versionRef.once('value', function(data) {
+			var value = data.val();
+			if (value !== OnlineManager.version) {
+				Graphics.printLink('http://jbbs.shitaraba.net/bbs/read.cgi/game/59992/1479599456/', 'ダウンロードページ');
+				$gameMessage.add('このゲームは最新版ではありません。\n中央のリンクからパッチを入手してください！');
+			}
+		}, this);
+		var noticeRef = firebase.database().ref('notification');
+		noticeRef.once('value', function(data) {
+			var value = data.val();
+			if (value) {
+				SceneManager._scene._chatLogWindow.pushLog(value);
+			}
+		}, this);
+	});
+});
+*/

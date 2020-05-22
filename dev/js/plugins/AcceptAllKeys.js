@@ -1,1 +1,285 @@
-var _0x29be=['prototype','key_y','key_control','numpad_0','numpad_4','key_v','key_q','key_backspace','key_l','key_pagedown','key_n','key_g','numpad_6','setBackground','key_a','keyShow','key_t','key_e','key_u','key_w','Actor2','pluginCommand','key_down','key_space','numpad_2','key_i','AcceptAllKeys','isPressed','key_o','add','key_h','numpad_8','key_alt','key_right','key_b','parameters','setValue','key_enter','key_k','setFaceImage','key_x','key_z','key_left','keyCheck','key_f','key_p','key_d','key_shift','key_insert','key_s','key_m'];(function(_0x2b7388,_0x29bea7){var _0x1666a4=function(_0x30a595){while(--_0x30a595){_0x2b7388['push'](_0x2b7388['shift']());}};_0x1666a4(++_0x29bea7);}(_0x29be,0x11a));var _0x1666=function(_0x2b7388,_0x29bea7){_0x2b7388=_0x2b7388-0x0;var _0x1666a4=_0x29be[_0x2b7388];return _0x1666a4;};(function(){var _0x53ef40=PluginManager[_0x1666('0x8')](_0x1666('0x32'));Input['keyMapper']={9:_0x53ef40['key_tab'],13:_0x53ef40[_0x1666('0xa')],16:_0x53ef40[_0x1666('0x14')],17:_0x53ef40[_0x1666('0x1a')],18:_0x53ef40[_0x1666('0x5')],27:_0x53ef40['key_escape'],32:_0x53ef40[_0x1666('0x2f')],33:_0x53ef40['key_pageup'],34:_0x53ef40[_0x1666('0x21')],37:_0x53ef40[_0x1666('0xf')],38:_0x53ef40['key_up'],39:_0x53ef40[_0x1666('0x6')],40:_0x53ef40[_0x1666('0x2e')],45:_0x53ef40[_0x1666('0x15')],96:_0x53ef40[_0x1666('0x1b')],98:_0x53ef40[_0x1666('0x30')],100:_0x53ef40[_0x1666('0x1c')],102:_0x53ef40[_0x1666('0x24')],104:_0x53ef40[_0x1666('0x4')],120:_0x53ef40['F9'],8:_0x53ef40[_0x1666('0x1f')],65:_0x53ef40[_0x1666('0x26')],66:_0x53ef40[_0x1666('0x7')],67:_0x53ef40['key_c'],68:_0x53ef40[_0x1666('0x13')],69:_0x53ef40[_0x1666('0x29')],70:_0x53ef40[_0x1666('0x11')],71:_0x53ef40[_0x1666('0x23')],72:_0x53ef40[_0x1666('0x3')],73:_0x53ef40[_0x1666('0x31')],74:_0x53ef40['key_j'],75:_0x53ef40[_0x1666('0xb')],76:_0x53ef40[_0x1666('0x20')],77:_0x53ef40[_0x1666('0x17')],78:_0x53ef40[_0x1666('0x22')],79:_0x53ef40[_0x1666('0x1')],80:_0x53ef40[_0x1666('0x12')],81:_0x53ef40[_0x1666('0x1e')],82:_0x53ef40['key_r'],83:_0x53ef40[_0x1666('0x16')],84:_0x53ef40[_0x1666('0x28')],85:_0x53ef40[_0x1666('0x2a')],86:_0x53ef40[_0x1666('0x1d')],87:_0x53ef40[_0x1666('0x2b')],88:_0x53ef40[_0x1666('0xd')],89:_0x53ef40[_0x1666('0x19')],90:_0x53ef40[_0x1666('0xe')]};var _0xd18739=Game_Interpreter[_0x1666('0x18')][_0x1666('0x2d')];Game_Interpreter[_0x1666('0x18')][_0x1666('0x2d')]=function(_0x26671b,_0x15b604){_0xd18739['call'](this,_0x26671b,_0x15b604);if(_0x26671b===_0x1666('0x10')){var _0x4dbfa9=_0x15b604[0x0];var _0x19025a=_0x15b604[0x1];var _0x1176f4=Input[_0x1666('0x0')](_0x19025a);$gameSwitches[_0x1666('0x9')](_0x4dbfa9,_0x1176f4);}if(_0x26671b===_0x1666('0x27')){var _0x424920='';var _0xec5520=0x0;for(var _0x18fe94 in _0x53ef40){var _0x19025a=_0x53ef40[_0x18fe94];var _0x51ff3f=Input['isPressed'](_0x19025a);if(_0x51ff3f){if(_0xec5520>0x0){_0x424920+=',';}_0x424920+=_0x18fe94;_0xec5520++;}}if(_0x424920){$gameMessage[_0x1666('0xc')](_0x1666('0x2c'),0x3);$gameMessage[_0x1666('0x25')](0x1);$gameMessage[_0x1666('0x2')](_0x424920+'\u3000が押されました');}}};}());
+/*:
+ * @plugindesc expand key
+ * @author dummy
+ *
+ * @param key_a
+ * @desc value
+ * @default a
+ * @param key_b
+ * @desc value
+ * @default b
+ * @param key_c
+ * @desc value
+ * @default c
+ * @param key_d
+ * @desc value
+ * @default d
+ * @param key_e
+ * @desc value
+ * @default e
+ * @param key_f
+ * @desc value
+ * @default f
+ * @param key_g
+ * @desc value
+ * @default g
+ * @param key_h
+ * @desc value
+ * @default h
+ * @param key_i
+ * @desc value
+ * @default i
+ * @param key_j
+ * @desc value
+ * @default j
+ * @param key_k
+ * @desc value
+ * @default k
+ * @param key_l
+ * @desc value
+ * @default l
+ * @param key_m
+ * @desc value
+ * @default m
+ * @param key_n
+ * @desc value
+ * @default n
+ * @param key_o
+ * @desc value
+ * @default o
+ * @param key_p
+ * @desc value
+ * @default p
+ * @param key_q
+ * @desc value
+ * @default pageup
+ * @param key_r
+ * @desc value
+ * @default r
+ * @param key_s
+ * @desc value
+ * @default s
+ * @param key_t
+ * @desc value
+ * @default t
+ * @param key_u
+ * @desc value
+ * @default u
+ * @param key_v
+ * @desc value
+ * @default v
+ * @param key_w
+ * @desc value
+ * @default pagedown
+ * @param key_x
+ * @desc value
+ * @default escape
+ * @param key_y
+ * @desc value
+ * @default y
+ * @param key_z
+ * @desc value
+ * @default ok
+
+ * @param key_backspace
+ * @desc value
+ * @default backspace
+ * @param key_tab
+ * @desc value
+ * @default tab
+ * @param key_enter
+ * @desc value
+ * @default ok
+ * @param key_shift
+ * @desc value
+ * @default shift
+ * @param key_control
+ * @desc value
+ * @default control
+ * @param key_alt
+ * @desc value
+ * @default control
+ * @param key_escape
+ * @desc value
+ * @default escape
+ * @param key_space
+ * @desc value
+ * @default ok
+ * @param key_pageup
+ * @desc value
+ * @default pageup
+ * @param key_pagedown
+ * @desc value
+ * @default pagedown
+ * @param key_left
+ * @desc value
+ * @default left
+ * @param key_right
+ * @desc value
+ * @default right
+ * @param key_up
+ * @desc value
+ * @default up
+ * @param key_down
+ * @desc value
+ * @default down
+ * @param key_insert
+ * @desc value
+ * @default escape
+ * @param numpad_0
+ * @desc value
+ * @default escape
+ * @param numpad_2
+ * @desc value
+ * @default down
+ * @param numpad_4
+ * @desc value
+ * @default left
+ * @param numpad_6
+ * @desc value
+ * @default right
+ * @param numpad_8
+ * @desc value
+ * @default up
+ * @param F9
+ * @desc value
+ * @default escape
+
+
+ * @help
+ * ============================================================================
+ * コマンドの使い方
+ * ============================================================================
+ *
+ * コマンド一覧
+ * 
+ * 特定の入力状態をスイッチに代入する
+ * 特定のキーではなく、特定のキーが押された結果関連付けられた状態に対応します
+ * たとえば、control状態はcontrolキーとaltキーのどちらが押されてもtrueを返します
+ * keyCheck 代入先スイッチ番号 ParametersのValueで関連付けられた文字列
+ * 例：スイッチ1にokの状態を代入する
+ * keyCheck 1 ok
+ * 
+ * 確認用コマンド
+ * 並列実行で実行しておけば、押されたと思われるキーを列挙します
+ * たとえば、control状態がtrueの時、control状態をtrueにする可能性のあるcontrolとaltが表示されます
+ * keyShow
+ */
+
+  (function() {
+  var parameters = PluginManager.parameters('AcceptAllKeys');
+  
+    Input.keyMapper = {
+//    9: 'tab',       // tab
+9: parameters['key_tab'],
+//    13: 'ok',       // enter
+13: parameters['key_enter'],
+//    16: 'shift',    // shift
+16: parameters['key_shift'],
+//    17: 'control',  // control
+17: parameters['key_control'],
+//    18: 'control',  // alt
+18: parameters['key_alt'],
+//    27: 'escape',   // escape
+27: parameters['key_escape'],
+//    32: 'ok',       // space
+32: parameters['key_space'],
+//    33: 'pageup',   // pageup
+33: parameters['key_pageup'],
+//    34: 'pagedown', // pagedown
+34: parameters['key_pagedown'],
+//    37: 'left',     // left arrow
+37: parameters['key_left'],
+//    38: 'up',       // up arrow
+38: parameters['key_up'],
+//    39: 'right',    // right arrow
+39: parameters['key_right'],
+//    40: 'down',     // down arrow
+40: parameters['key_down'],
+//    45: 'escape',   // insert
+45: parameters['key_insert'],
+//    81: 'pageup',   // Q
+//    87: 'pagedown', // W
+//    88: 'escape',   // X
+//    90: 'ok',       // Z
+//    96: 'escape',   // numpad 0
+96: parameters['numpad_0'],
+//    98: 'down',     // numpad 2
+98: parameters['numpad_2'],
+//    100: 'left',    // numpad 4
+100: parameters['numpad_4'],
+//    102: 'right',   // numpad 6
+102: parameters['numpad_6'],
+//    104: 'up',      // numpad 8
+104: parameters['numpad_8'],
+//    120: 'debug',    // F9
+120: parameters['F9'],
+
+8: parameters['key_backspace'],
+65: parameters['key_a'],
+66: parameters['key_b'],
+67: parameters['key_c'],
+68: parameters['key_d'],
+69: parameters['key_e'],
+70: parameters['key_f'],
+71: parameters['key_g'],
+72: parameters['key_h'],
+73: parameters['key_i'],
+74: parameters['key_j'],
+75: parameters['key_k'],
+76: parameters['key_l'],
+77: parameters['key_m'],
+78: parameters['key_n'],
+79: parameters['key_o'],
+80: parameters['key_p'],
+81: parameters['key_q'],
+82: parameters['key_r'],
+83: parameters['key_s'],
+84: parameters['key_t'],
+85: parameters['key_u'],
+86: parameters['key_v'],
+87: parameters['key_w'],
+88: parameters['key_x'],
+89: parameters['key_y'],
+90: parameters['key_z']
+};
+  
+
+
+
+	var _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
+	Game_Interpreter.prototype.pluginCommand = function(command, args) {
+        	_Game_Interpreter_pluginCommand.call(this, command, args);
+		if(command === 'keyCheck'){
+			var var_num = args[0];
+			var test = args[1];
+			var tf = Input.isPressed( test );
+			$gameSwitches.setValue(var_num, tf);
+		}
+
+
+		if(command === 'keyShow'){
+			var string = "";
+			var j=0;
+			for(var key in parameters){
+				var test = parameters[key];
+				var check = Input.isPressed(test);
+				if(check){
+					if(j>0){
+						string += ',';
+				  	}
+					string += key;
+				 	j++;
+				}
+			}
+
+			if(string){
+			  $gameMessage.setFaceImage('Actor2', 3);
+			  $gameMessage.setBackground(1);
+			  $gameMessage.add(string + "　が押されました");
+			}
+		}
+	}
+
+  
+  })();

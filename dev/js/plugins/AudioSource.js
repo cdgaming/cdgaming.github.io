@@ -1,1 +1,213 @@
-var _0xc6fe=['toLowerCase','bgm','_currentBgs','Bgm','volume','prototype','Bgs','getBgsLine','_currentBgm','bind','deltaX','_bgmSource','listener','audiosource','clamp','deltaY','_eventId','Parameters','iterateAllBgs','sqrt','getBgsLineIndex','audiosourceエラー：音源となるイベントが存在しません','centerY','update','event','pan','updateAudioSource','_realX','call','_bgsSource','pluginCommand','AudioSource','apply','pow','ROUTE_PLAY_SE','processMoveCommand','parameters','player','playSe','bgs','_listenerEvent','_realY','_seSource','decay','_bgsSources'];(function(_0x553e24,_0xc6feb7){var _0x8ba8b1=function(_0x35bd2b){while(--_0x35bd2b){_0x553e24['push'](_0x553e24['shift']());}};_0x8ba8b1(++_0xc6feb7);}(_0xc6fe,0x1ca));var _0x8ba8=function(_0x553e24,_0xc6feb7){_0x553e24=_0x553e24-0x0;var _0x8ba8b1=_0xc6fe[_0x553e24];return _0x8ba8b1;};(function(){'use strict';var _0x3f5a78=PluginManager[_0x8ba8('0x1c')](_0x8ba8('0x17'));var _0x315179=_0x3f5a78[_0x8ba8('0x4')];var _0xfa9237=(+_0x3f5a78[_0x8ba8('0x23')]||0x55)[_0x8ba8('0x6')](0x0,Infinity);var _0x51b5ae=+_0x3f5a78['pan']||0xa;var _0x88c85e=(+_0x3f5a78['cutoff']||0x1)[_0x8ba8('0x6')](0x0,0x64);var _0xc7f91a=Game_Character[_0x8ba8('0x2a')]['processMoveCommand'];Game_Character[_0x8ba8('0x2a')][_0x8ba8('0x1b')]=function(_0x2954b7){if(_0x2954b7['code']===Game_Character[_0x8ba8('0x1a')]){var _0x510ed5=_0x2954b7['parameters'][0x0];var _0x5077ee=_0x510ed5[_0x8ba8('0x29')];var _0x5c81a2=_0x510ed5[_0x8ba8('0x11')];_0x572b0e(_0x510ed5,this);if(_0x510ed5[_0x8ba8('0x29')]>=_0x88c85e)_0xba2ed9[_0x8ba8('0x14')](AudioManager,_0x510ed5);_0x510ed5[_0x8ba8('0x29')]=_0x5077ee;_0x510ed5[_0x8ba8('0x11')]=_0x5c81a2;}else _0xc7f91a[_0x8ba8('0x18')](this,arguments);};AudioManager[_0x8ba8('0x12')]=function(){_0x290198(this[_0x8ba8('0x0')],$gameMap['event']($gameSystem[_0x8ba8('0x3')]),!![]);if($gameSystem[_0x8ba8('0x24')]){if(!AudioManager[_0x8ba8('0xa')])return delete $gameSystem[_0x8ba8('0x24')];AudioManager[_0x8ba8('0xa')](function(){_0x290198(this[_0x8ba8('0x27')],$gameMap['event']($gameSystem[_0x8ba8('0x24')][this[_0x8ba8('0xc')]()]));}[_0x8ba8('0x1')](this));}else _0x290198(this[_0x8ba8('0x27')],$gameMap[_0x8ba8('0x10')]($gameSystem['_bgsSource']));};var _0xba2ed9=AudioManager['playSe'];AudioManager[_0x8ba8('0x1e')]=function(_0x1b73f5){var _0x7a9d03=$gameMap[_0x8ba8('0x10')]($gameSystem[_0x8ba8('0x22')]);if(_0x7a9d03){var _0x2179b4=_0x1b73f5[_0x8ba8('0x29')];var _0x1e4cf0=_0x1b73f5['pan'];_0x572b0e(_0x1b73f5,_0x7a9d03);if(_0x1b73f5[_0x8ba8('0x29')]>=_0x88c85e)_0xba2ed9['apply'](this,arguments);_0x1b73f5[_0x8ba8('0x29')]=_0x2179b4;_0x1b73f5[_0x8ba8('0x11')]=_0x1e4cf0;}else _0xba2ed9[_0x8ba8('0x18')](this,arguments);};var _0x15ce05=Game_Map[_0x8ba8('0x2a')][_0x8ba8('0xf')];Game_Map[_0x8ba8('0x2a')][_0x8ba8('0xf')]=function(_0x16c453){_0x15ce05[_0x8ba8('0x18')](this,arguments);AudioManager['updateAudioSource']();};var _0x290021=Game_Interpreter[_0x8ba8('0x2a')]['pluginCommand'];Game_Interpreter['prototype'][_0x8ba8('0x16')]=function(_0x1fcf3c,_0x31acd0){_0x290021[_0x8ba8('0x18')](this,arguments);if(_0x1fcf3c['toLowerCase']()===_0x8ba8('0x5')){var _0x7f4d60=+_0x31acd0[0x1]===0x0?this[_0x8ba8('0x8')]:+_0x31acd0[0x1];switch(_0x31acd0[0x0][_0x8ba8('0x25')]()){case _0x8ba8('0x4'):$gameSystem[_0x8ba8('0x20')]=_0x7f4d60;break;case _0x8ba8('0x26'):$gameSystem[_0x8ba8('0x3')]=_0x7f4d60;break;case _0x8ba8('0x1f'):if($gameSystem[_0x8ba8('0x2c')]){$gameSystem[_0x8ba8('0x24')]=$gameSystem['_bgsSources']||[];$gameSystem[_0x8ba8('0x24')][$gameSystem[_0x8ba8('0x2c')]()]=_0x7f4d60;}else $gameSystem[_0x8ba8('0x15')]=_0x7f4d60;break;case'se':$gameSystem[_0x8ba8('0x22')]=_0x7f4d60;break;default:break;}}};function _0x290198(_0x114ed8,_0x5e5b3d,_0x427976){if(_0x114ed8&&_0x5e5b3d){var _0x549f20=_0x114ed8[_0x8ba8('0x29')];var _0x37798a=_0x114ed8[_0x8ba8('0x11')];_0x572b0e(_0x114ed8,_0x5e5b3d);if(_0x114ed8[_0x8ba8('0x29')]<_0x88c85e)_0x114ed8['volume']=0x0;AudioManager['update'+(_0x427976?_0x8ba8('0x28'):_0x8ba8('0x2b'))+_0x8ba8('0x9')](_0x114ed8);_0x114ed8[_0x8ba8('0x29')]=_0x549f20;_0x114ed8[_0x8ba8('0x11')]=_0x37798a;}}function _0x572b0e(_0xa6428d,_0x1a9fdd){if(!_0x1a9fdd)throw new Error(_0x8ba8('0xd'));var _0x2802ce,_0x3d1a22,_0x223d24=$gameMap[_0x8ba8('0x10')]($gameSystem[_0x8ba8('0x20')]);if(_0x223d24){_0x2802ce=_0x223d24[_0x8ba8('0x13')];_0x3d1a22=_0x223d24[_0x8ba8('0x21')];}else{switch(_0x315179[_0x8ba8('0x25')]()){case'screen':_0x2802ce=$gameMap['displayX']()+$gamePlayer['centerX']();_0x3d1a22=$gameMap['displayY']()+$gamePlayer[_0x8ba8('0xe')]();break;case _0x8ba8('0x1d'):_0x2802ce=$gamePlayer['_realX'];_0x3d1a22=$gamePlayer[_0x8ba8('0x21')];break;default:throw new Error('audiosourceエラー：listenerパラメータはscreenかplayerにしてください');break;}}var _0x5f3d47=$gameMap[_0x8ba8('0x2')](_0x1a9fdd[_0x8ba8('0x13')],_0x2802ce);var _0x3090a4=$gameMap[_0x8ba8('0x7')](_0x1a9fdd[_0x8ba8('0x21')],_0x3d1a22);var _0x3da52c=Math[_0x8ba8('0xb')](_0x5f3d47*_0x5f3d47+_0x3090a4*_0x3090a4);if(_0x3da52c>0x1)_0xa6428d[_0x8ba8('0x29')]*=Math[_0x8ba8('0x19')](_0xfa9237/0x64,_0x3da52c-0x1);_0xa6428d[_0x8ba8('0x11')]=(_0x5f3d47*_0x51b5ae)[_0x8ba8('0x6')](-0x64,0x64);}}());
+//=============================================================================
+// AudioSource.js
+// PUBLIC DOMAIN
+// ----------------------------------------------------------------------------
+// 2016/10/18 BGMとBGSの音源化を、一度指定すれば自動調節としました
+// 2016/10/21 音量・位相調節の距離測定単位をマス単位からドット単位に変更しました
+// 2016/12/04 セーブ・ロードに対応、BGS並行演奏プラグイン(ParallelBgs.js)との連携
+//=============================================================================
+
+/*:
+ * @plugindesc 音源と聞き手の位置関係に応じて自動的に音量・位相を調節します。
+ * @author くらむぼん
+ *
+ * @param listener
+ * @desc 音の「聞き手」をscreenかplayerから選ぶ
+ * @default screen
+ *
+ * @param decay
+ * @desc 音源と聞き手の距離が一歩広がった時の音量変化倍率（％）
+ * @default 85
+ *
+ * @param pan
+ * @desc 音源が聞き手の一歩右に居る時の変化位相
+ * @default 10
+ *
+ * @param cutoff
+ * @desc 音を鳴らすことを許可する最小の音量（％）
+ * @default 1
+ *
+ * @help
+ * マップイベントの「ルート設定」内で効果音を鳴らすと、
+ * そのイベントが配置されている座標から鳴ったかのように音量・位相を調節します。
+ * 具体的には、「音源」と「聞き手」が離れているほど音量が小さくなり、
+ * 「聞き手」より「音源」が右にあるほど位相が増加（＝右から聞こえる）します。
+ * ※イベントコマンドの「SEの演奏」では自動調節しません。うまく使い分けましょう。
+ * 
+ * また、プラグインコマンドによりBGMやBGSを特定の位置から鳴らすことができます。
+ * トリアコンタンさんのBGS並行演奏プラグインとも連携可能にしてみました。
+ * 詳しくは下の方の「プラグインコマンド」を見てください。
+ * 
+ * なお基準となる音量は効果音(,BGM,BGS)の演奏を指定した時の音量です。
+ * 音源と聞き手が同じかすぐ隣のマスに居る時は基準音量で鳴らされ、
+ * そこから一歩離れるたびに音が小さくなっていきます。
+ * 
+ * 
+ * プラグインパラメータ：
+ * listener : 発信される音の「聞き手」を設定します。
+ * 　screen　「画面の中央マス」が聞き手になります。
+ * 　player　「プレイヤー」が聞き手になります。
+ * decay : 音源と聞き手との間の距離が「一歩」広がるたびに音量がdecay％倍されます。
+ * 　基本的には0から100までの値を想定しています。100以上の値を入れると
+ * 　遠ざかるほど音が大きくなる、というすこし不思議な演出もできます。
+ * pan : 音源が「一歩」右に移動すると、位相がpanだけ変化します。
+ * 　逆に音源が一歩左へ移動すると位相が-pan変化します。
+ * cutoff : 音を鳴らすことを許可する最小の音量（％）です。
+ * 　計算後の音量がこの値を下回ると強制的に音量０％になります。
+ * 
+ * 
+ * プラグインコマンド：
+ * audiosource listener 1
+ * 指定したID（この場合は1）のマップイベントを聞き手にします。
+ * （ちなみに0を指定すると「このイベント」を聞き手にします）
+ * 聞き手は常に一つですので、スクリーンorプレイヤーは聞き手ではなくなります。
+ * 
+ * audiosource listener reset
+ * マップイベントの聞き手化を解除し、スクリーンかプレイヤーに聞き手を戻します。
+ * 
+ * 
+ * audiosource bgm 1
+ * audiosource bgs 1
+ * 現在流れているBGM/BGSの音量と位相を、
+ * 「指定したIDのマップイベントから鳴っている」風に聞こえるように調節します。
+ * （0を指定すると「このイベント」から鳴らします）
+ * 設置されたラジオから曲が流れている演出などにお使いください。
+ * 
+ * また、BGS並行演奏プラグインと連携する場合は、
+ * ◆プラグインコマンド：PB_BGSライン変更 2
+ * ◆プラグインコマンド：audiosource bgs 1
+ * という順番で指定すればそれぞれのBGSに音源を指定できます。
+ * 
+ * audiosource bgm reset
+ * audiosource bgs reset
+ * BGM/BGSの音源化を解除し、通常通りの演奏に戻します。
+ * 
+ * 
+ * ライセンス：
+ * このプラグインの利用法に制限はありません。お好きなようにどうぞ。
+ */
+
+(function() {
+	'use strict';
+	var parameters = PluginManager.parameters('AudioSource');
+	var listener = parameters['listener'];
+	var decay = (+parameters['decay'] || 85).clamp(0, Infinity);
+	var pan = +parameters['pan'] || 10;
+	var cutoff = (+parameters['cutoff'] || 1).clamp(0, 100);
+
+	//効果音の音量調節（マップイベントのルート設定から鳴らした時のみ）
+	var _Game_Character_processMoveCommand = Game_Character.prototype.processMoveCommand;
+	Game_Character.prototype.processMoveCommand = function(command) {
+		if (command.code === Game_Character.ROUTE_PLAY_SE) {
+			var se = command.parameters[0];
+			var lastVolume = se.volume;
+			var lastPan = se.pan;
+			adjust(se, this);
+			if (se.volume >= cutoff) _AudioManager_playSe.call(AudioManager, se);
+			se.volume = lastVolume;
+			se.pan = lastPan;
+		}
+		else _Game_Character_processMoveCommand.apply(this, arguments);
+	};
+
+	//BGM、BGSの音量調節（毎フレーム）
+	AudioManager.updateAudioSource = function() {
+		updateParameters(this._currentBgm, $gameMap.event($gameSystem._bgmSource), true);
+		if ($gameSystem._bgsSources) {
+			if (!AudioManager.iterateAllBgs) return delete $gameSystem._bgsSources;
+			AudioManager.iterateAllBgs(function() {
+				updateParameters(this._currentBgs, $gameMap.event($gameSystem._bgsSources[this.getBgsLineIndex()]));
+			}.bind(this));
+		}
+		else updateParameters(this._currentBgs, $gameMap.event($gameSystem._bgsSource));
+	};
+
+	var _AudioManager_playSe = AudioManager.playSe;
+	AudioManager.playSe = function(se) {
+		var source = $gameMap.event($gameSystem._seSource);
+		if (source) {
+			var lastVolume = se.volume;
+			var lastPan = se.pan;
+			adjust(se, source);
+			if (se.volume >= cutoff) _AudioManager_playSe.apply(this, arguments);
+			se.volume = lastVolume;
+			se.pan = lastPan;
+		} else _AudioManager_playSe.apply(this, arguments);
+	};
+
+	var _Game_Map_update = Game_Map.prototype.update;
+	Game_Map.prototype.update = function(sceneActive) {
+		_Game_Map_update.apply(this, arguments);
+		AudioManager.updateAudioSource();
+	};
+
+	var _Game_Interpreter_pluginCommand = Game_Interpreter.prototype.pluginCommand;
+	Game_Interpreter.prototype.pluginCommand = function(command, args) {
+		_Game_Interpreter_pluginCommand.apply(this, arguments);
+		if (command.toLowerCase() === 'audiosource') {
+			var eventId = +args[1] === 0 ? this._eventId : +args[1];
+			switch (args[0].toLowerCase()) {
+				case 'listener':
+					$gameSystem._listenerEvent = eventId;
+					break;
+				case 'bgm':
+					$gameSystem._bgmSource = eventId;
+					break;
+				case 'bgs':
+					if ($gameSystem.getBgsLine) {
+						$gameSystem._bgsSources = $gameSystem._bgsSources || [];
+						$gameSystem._bgsSources[$gameSystem.getBgsLine()] = eventId;
+					}
+					else $gameSystem._bgsSource = eventId;
+					break;
+				case 'se':
+					$gameSystem._seSource = eventId;
+					break;
+				default:
+					break;
+			}
+		}
+	};
+
+	//BGMとBGSの音量と位相を調節する
+	function updateParameters(audio, source, isBgm) {
+		if (audio && source) {
+			var lastVolume = audio.volume;
+			var lastPan = audio.pan;
+			adjust(audio, source);
+			if (audio.volume < cutoff) audio.volume = 0;
+			AudioManager['update' + (isBgm ? 'Bgm' : 'Bgs') + 'Parameters'](audio);
+			audio.volume = lastVolume;
+			audio.pan = lastPan;
+		}
+	}
+
+	//実際に音量調節を担当する関数。第一引数にオーディオデータ、第二引数に音源キャラクターを指定する
+	function adjust(audio, source) {
+		if (!source) throw new Error('audiosourceエラー：音源となるイベントが存在しません');
+		var listenerX, listenerY, listenerEvent = $gameMap.event($gameSystem._listenerEvent);
+		if (listenerEvent) {
+			listenerX = listenerEvent._realX;
+			listenerY = listenerEvent._realY;
+		} else {
+			switch (listener.toLowerCase()) {
+				case 'screen':
+					listenerX = $gameMap.displayX() + $gamePlayer.centerX();
+					listenerY = $gameMap.displayY() + $gamePlayer.centerY();
+					break;
+				case 'player':
+					listenerX = $gamePlayer._realX;
+					listenerY = $gamePlayer._realY;
+					break;
+				default:
+					throw new Error('audiosourceエラー：listenerパラメータはscreenかplayerにしてください');
+					break;
+			}
+		}
+		var dx = $gameMap.deltaX(source._realX, listenerX);
+		var dy = $gameMap.deltaY(source._realY, listenerY);
+		var d = Math.sqrt(dx * dx + dy * dy);
+		if (d > 1) audio.volume *= Math.pow(decay / 100, d - 1);
+		audio.pan = (dx * pan).clamp(-100, 100);
+	}
+})();
