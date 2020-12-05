@@ -1,4 +1,4 @@
-[MainーInfo]
+[MainInfo]
 LauncherType = 0
 IpAddress = remus.ddns.net
 IpAddressPort = 44405
